@@ -5,8 +5,6 @@ import mate.academy.service.AuthenticationService;
 public class Main {
     private static final AuthenticationService authenticationService = new AuthenticationService();
 
-    private static String str = new String("hello".toCharArray());
-
     public static void main(String[] args) {
         test("bob@i.ua", "1234", true);
         test("alice@i.ua", "1234", true);
