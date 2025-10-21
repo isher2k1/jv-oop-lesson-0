@@ -5,6 +5,8 @@ import mate.academy.service.AuthenticationService;
 public class Main {
     private static final AuthenticationService authenticationService = new AuthenticationService();
 
+    static String str = new String("hello".toCharArray());
+
     public static void main(String[] args) {
         test("bob@i.ua", "1234", true);
         test("alice@i.ua", "1234", true);
@@ -20,5 +22,10 @@ public class Main {
             System.out.print("Expected to receive " + expected + ", but was " + actual + ". ");
             System.out.println("Email: " + email + ", password " + password);
         }
+    }
+
+    public static void smth(String s) {
+        String s21 = str.intern();
+        System.out.println();
     }
 }
