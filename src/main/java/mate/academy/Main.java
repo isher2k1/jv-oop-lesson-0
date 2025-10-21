@@ -23,9 +23,4 @@ public class Main {
             System.out.println("Email: " + email + ", password " + password);
         }
     }
-
-    public static void smth(String s) {
-        String s21 = str.intern();
-        System.out.println();
-    }
 }
